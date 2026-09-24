@@ -9,7 +9,7 @@ import"./modulepreload-polyfill-P2Xu9kJm.js";import{t as e}from"./nav-xUi3SNx4.j
         <span>${e}</span>
       </div>
     `).join(``));let w=document.getElementById(`rfq-model-display`);w&&(w.value=`${r.title} (${r.model})`);let T=document.getElementById(`rfq-product-id`);T&&(T.value=r.id);let E=document.getElementById(`detail-rfq-form`),D=document.getElementById(`detail-rfq-success`);E&&D&&E.addEventListener(`submit`,e=>{e.preventDefault(),D.classList.remove(`hidden`),setTimeout(()=>{E.reset(),w&&(w.value=`${r.title} (${r.model})`)},3e3)});let O=document.getElementById(`other-products-grid`);O&&(O.innerHTML=Object.values(t).filter(e=>e.id!==r.id).slice(0,6).map(e=>`
-      <a href="/product-detail.html?id=${e.id}" class="p-2.5 rounded-xl border border-slate-200 hover:border-[#EE6226] bg-slate-50 hover:bg-white transition-all group flex flex-col items-center text-center">
+      <a href="/test_web/product-detail.html?id=${e.id}" class="p-2.5 rounded-xl border border-slate-200 hover:border-[#EE6226] bg-slate-50 hover:bg-white transition-all group flex flex-col items-center text-center">
         <div class="w-full h-16 flex items-center justify-center mb-2 bg-white rounded-lg p-1 border border-slate-100">
           <img src="${e.image}" alt="${e.title}" class="max-h-14 max-w-full object-contain group-hover:scale-105 transition-transform" />
         </div>
